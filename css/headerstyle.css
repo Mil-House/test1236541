@@ -683,7 +683,16 @@ header {
         border-radius: 20px;
         box-shadow: rgb(204 219 232) 0px 0px 6px 0px inset, rgb(255 255 255 / 50%) -3px -3px 6px 1px inset;
     }
-    
+
+    @media (max-height: 660px) {
+
+        .operation .minibagmenu ul div { /*Added for Mobile (Added 30.10.2021)*/
+            height: 224px;
+            overflow: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+    }
+
     .operation .minibagmenu ul li {
         list-style: none;
         padding: 10px 0;
